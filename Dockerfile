@@ -1,2 +1,2 @@
-FROM ghcr.io/msd-live/jupyter/r-notebook:latest
+FROM ghcr.io/msd-live/jupyter/r-notebook:dev
 COPY notebooks /home/jovyan/notebooks
