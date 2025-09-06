@@ -6,9 +6,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ghcr.io/msd-live/jupyter/gcam-notebook:dev
+      target: gcam_deploy
+    image: ghcr.io/msd-live/jupyter/gcam-notebook:latest
     ports:
       - "8888:8888"
     volumes:
-      - ./data:/home/jovyan/data
+      - ./data:/data
       - ./notebooks:/home/jovyan/notebooks
